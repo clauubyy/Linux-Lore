@@ -1,0 +1,56 @@
+@import url("~/.cache/wal/colors-waybar.css");
+
+window#waybar {
+    background-color: var(--background);
+    color: var(--foreground);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tooltip {
+    background-color: var(--color0);
+    color: var(--color7);
+}
+
+.modules-left, .modules-center, .modules-right {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.modules-center {
+    justify-content: center;
+}
+
+.modules-right {
+    justify-content: flex-end;
+}
+
+#workspaces button {
+    background-color: var(--color1);
+    color: var(--foreground);
+    border-radius: 5px;
+    padding: 4px 8px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+#workspaces button.active {
+    background-color: var(--color3);
+}
+
+#clock {
+    font-size: 1.2rem;
+    color: var(--color6);
+    font-weight: bold;
+}
+
+#battery {
+    color: var(--color5);
+}
+
+#pulseaudio {
+    color: var(--color4);
+}
